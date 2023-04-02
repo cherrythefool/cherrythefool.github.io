@@ -1,0 +1,62 @@
+@keyframes bounceIn{
+  0%{
+    transform:scaleX(0.5);
+    opacity: 0;
+  }
+  60%{
+    transform:scaleX(1);
+    opacity: 1;
+  }
+  100%{
+    transform:scaleX(0.8);
+    opacity: 0;
+  }
+}
+
+h1 {
+    font-size: 35px;
+    background: -webkit-linear-gradient(#4400ff, #4ba100);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: bounceIn 4s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+  h2 {
+    font-size: 25px;
+    background: -webkit-linear-gradient(#4a08ff, #9000ff); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+body {background-color: rgb(54,69,79, 0.3);
+    text-align: center;
+    background-image: linear-gradient(to right top, #aeb3b9, #78c7dd, #00dcd3, #27ea92, #a8eb12);
+}
+.body::before {    
+    content: "";
+    background-image: url('https://placekitten.com/1200/800');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+
+table.center {margin-left: auto;
+    margin-right: auto;
+    border: 8px solid silver;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            border: 5px solid rgb(100, 155, 218);
+            background-color: #a8eb12;
+            font-size: 2em;
+            cursor: pointer;
+            outline: none;
+}
+* {font-family: "Lobster", cursive;
+}
