@@ -4,46 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minesweeper Treasure Hunt!</title>
+    <title>&#128142 Minesweeper Treasure Hunt!</title>
     <link rel="icon" type="image/x-con" href="C:\Users\sarah\jumpstart\mine_treasure_hunt_bomb.png">
-    <link rel="stylesheet" href="OBD_original_skin.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <link rel="stylesheet" href="minesweeper_skin.css"/>
 </head>
 <body>
     <h1>&#128681 Minesweeper Treasure Hunt &#128165</h1>
-    <h2> Story</h2>
-        <p>You have been searching for gold with an ancient map which has been disintegrating. But the map leads to an old minefield...<br><br>
+    <h2 id=”top”> Story</h2>
+        <p>You've spent decades decoding texts and consulting historians and experts, and you have finally deciphered the ancient, disintegrating map passed down from your great-grandparents. But the map leads to an old minefield...<br><br>
             Welcome, treasure hunter! <br> 
-            I'm glad you're here, the last treasure hunter to search this land has been out cold for a week with a concussion.<br>
-            I thought we'd cleared those mines...<br>
-            Luckily, there's only one area of the minefield that hasn't been searched.<br>
-            I don't think there are any mines there, but who  knows? Actually...there's probably at least one mine left. <br>
-            Well, let's look for treasure!
+            I'm protector of these lands, but the last time I've had a treasure hunter was here was before the war.<br>
+            You're a welcome guest here, but be careful!
+            I've made progress clearing away the ordnance left behind, but who knows? ...there's probably at least one mine left. <br>
+            I'll do what I can to protect you but this is dangerous business!
         </p>
 
     <h2>How to play</h2>
         <p>  
-            Search the grid squares in the 3 meter by 3 meter area of the minefield below by clicking the square you think may have the treasure. <br>
-            Win the treasure (and the game!) by finding the square containing TREASURE. <br>
-            But click the mine...and it's game over.
+            Search the grid squares in the 3 meter by 3 meter area of the minefield below by clicking the area you think may have the treasure. <br>
+            The protector of the land will mark neutral squares with a red flag after you've searched, indicating that there are no mines there.<br>
+            Win the treasure (and the game!) by finding the square containing the treasure. <br>
+            But click the mine...and it's game over.<br>
+            If you search too long without finding anything, the protector will move you to a new field to prevent you from hitting a mine.
         </p>
-        <table class="center">
-            <tr>
-                <td id="0" onclick="treasure(0)">?</td>
-                <td id="1" onclick="treasure(1)">?</td>
-                <td id="2" onclick="treasure(2)">?</td>
-            </tr>
-            <tr>
-                <td id="3" onclick="treasure(3)">?</td>
-                <td id="4" onclick="treasure(4)">?</td>
-                <td id="5" onclick="treasure(5)">?</td>
-            </tr>  
-            <tr>
-                <td id="6" onclick="treasure(6)">?</td>
-                <td id="7" onclick="treasure(7)">?</td>
-                <td id="8" onclick="treasure(8)">?</td>
-            </tr>             
-        </table>
-    <button type="button" onclick="location.reload()">Restart 😊 Game</button>
+
+        <button type="button" onclick="location.reload()"> <i class=&#128522></i></button><br><br>
+
+    <table class="center">
+        <tr>
+            <td id="0" onclick="treasure(0)">?</td>
+            <td id="1" onclick="treasure(1)">?</td>
+            <td id="2" onclick="treasure(2)">?</td>
+        </tr>
+        <tr>
+            <td id="3" onclick="treasure(3)">?</td>
+            <td id="4" onclick="treasure(4)">?</td>
+            <td id="5" onclick="treasure(5)">?</td>
+        </tr>  
+        <tr>
+            <td id="6" onclick="treasure(6)">?</td>
+            <td id="7" onclick="treasure(7)">?</td>
+            <td id="8" onclick="treasure(8)">?</td>
+        </tr>             
+    </table>
+    <br>
+    <br>
+    <footer>
+        &copy Team Cherry | LEARN JumpStart | 2023<br>
+        <a href="https://en.wikipedia.org/wiki/Minesweeper_(video_game)" target="_blank"> History of Minesweeper </a><br>
+        <a href=”#top”> Going up! </a>
+    </footer>
+    <br>
+    <br>
+            
     <script type="text/javascript" src="OBD_treasure_hunt.js"></script>
 </body>
 </html>

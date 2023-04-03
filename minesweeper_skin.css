@@ -1,0 +1,108 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    text-align: center;
+    color:white;
+    background-color: rgb(66, 73, 78);
+    background-image: url(https://c1.wallpaperflare.com/preview/701/749/289/aerial-forest-field-green.jpg);
+    background-position: center;
+    Background-size:cover;
+    Background-attachment:fixed;
+    background-blend-mode:soft-light;
+}
+
+h1{
+    border: 10px solid gray;
+    border-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/px780033-image-kwvuzoke.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=1e75d945867b272cecd6b00fc36f4736) 50 fill;
+    margin-left: auto;  
+    margin-right: auto;
+    padding: 1%;
+    width: 60%;
+    color: #ffffff;
+    text-shadow: 3px 3px rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+h2{
+    border: 10px solid gray;
+    border-image: url(https://openclipart.org/image/800px/320809) 50 fill;
+    margin-left: auto;  
+    margin-right: auto;
+    padding: 1%;
+    width: 18%;
+    background-color: #BFBFBF;
+    color:rgb(66, 73, 78);
+    font-size: 30px;
+}
+
+p{
+    font-size: 16px;
+    background-color: rgb(0, 0, 0, 0.4);
+    padding: 1%;
+    width: 85%;
+    border-radius: 25px;
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0%;
+    width: 75%;
+    height: 400px;
+    table-layout:fixed;
+
+    outline:rgb(0, 0, 0, 0.4);
+    border: 5% solid black;
+
+    text-align: center;
+    vertical-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    text-shadow: 3px 3px black;
+
+    background-image: url(https://c1.wallpaperflare.com/preview/701/749/289/aerial-forest-field-green.jpg);
+    background-position: center;
+    Background-size:cover;
+    Background-attachment:fixed;
+    background-blend-mode:exclusion;
+}
+
+tr, td {
+    text-align: center;
+    vertical-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+
+
+}
+a:link {
+    color: #409e3d;
+}
+  
+a:visited {
+    color: rgb(146, 146, 146);
+}
+  
+a:hover {
+    color: #0511F2;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #F20505;
+  }
+
+
+/* goals:  
+
+figure out how to get restart button to smiley with no offset
+

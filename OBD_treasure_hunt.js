@@ -11,17 +11,17 @@ else if ((gold === bomb) && (bomb === 8)){
     }
 
 const endGameMine = () => {
-    confirm("Mine activated, game over! Try again, if you're daring");
+    confirm("Mine activated, game over! Try again, if you dare.");
     window.location.reload()
 }
     
 const endGameGold = () => {
-    confirm("You have found the gold! Risking the minefield was worthwhile...for you alone."),
+    confirm("You found the treasure! You know what they say, the real treasure is the friendships we made along the way! Was risking the minefield worthwhile?"),
     window.location.reload()
 }
 
 const tooManyClicks = () => {
-    if (clickcount > 2)
+    if (clickcount > 4)
         return confirm("Wait! You've covered too much ground! You're likely to hit a mine; start over"),
         window.location.reload()
 }
@@ -31,15 +31,15 @@ const treasure = (location) => {
     clickcount+=1
     if (bomb === location){
         return document.getElementById(location).innerHTML = "&#128165",
-            setTimeout(endGameMine, 6)
+            setTimeout(endGameMine, 12)
             }
         
     else if (gold === location){
-        return document.getElementById(location).innerHTML = "&#128176",
+        return document.getElementById(location).innerHTML = "&#128150",
             setTimeout(endGameGold, 6)
             }
     
     else
-        return document.getElementById(location).innerHTML = "&#128371"
+        return document.getElementById(location).innerHTML = "&#128681"
 
 }
